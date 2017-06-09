@@ -1,0 +1,21 @@
+#!/bin/sh
+echo "Please provide the Basic value"
+read Basic
+# Calculating DP Value
+DP=`expr $Basic / 2`
+echo "DP value is" $DP
+val1=`expr $Basic + $DP`
+val2=`expr $val1 \* 35` 
+DA=`expr $val2 / 100`
+echo "DA value is" $DA
+val3=`expr $val1 \* 8`
+HR=`expr $val3 / 100`
+echo "HR value is:" $HR
+val4=`expr $val1 \* 3`
+MA=`expr $val4 / 100`
+echo "MA value is:" $MA
+val5=`expr $val1 \* 10`
+PF=`expr $val5 / 100`
+echo "PF value is:" $PF
+Salary=`expr $Basic + $DP + $DA + $HR + $MA -  $PF`
+echo "Salary is:" $Salary

@@ -1,6 +1,8 @@
 #!/bin/sh
 echo "Please provide input1 and input2 values"
-read A B
+#read A B
+A=$1
+B=$2
 echo "1. Addition 2. Substraction 3. Multipliction 4. Division"
 echo "Enter the choice as displayed:"
 read Value
